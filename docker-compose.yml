@@ -28,3 +28,11 @@ services:
       - "9000:9000"
     networks:
       - microservices
+
+  transcriber:
+    build:
+      context: .
+      dockerfile: Dockerfile-transcriber
+    container_name: transcriber
+    volumes:
+      - ./transcriber:/var/www
