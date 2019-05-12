@@ -36,3 +36,11 @@ services:
     container_name: transcriber
     volumes:
       - ./transcriber:/var/www
+
+  notifier:
+    build:
+      context: .
+      dockerfile: Dockerfile-notifier
+    container_name: notifier
+    volumes:
+      - ./notifier:/var/www

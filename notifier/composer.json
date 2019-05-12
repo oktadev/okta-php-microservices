@@ -1,0 +1,7 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "2.*",
+        "vlucas/phpdotenv": "^3.3",
+        "swiftmailer/swiftmailer": "^6.0"
+    }
+}
