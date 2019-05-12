@@ -1,7 +1,7 @@
 version: '3'
 
 networks:
-  laravel:
+  microservices:
 
 services:
   nginx:
@@ -15,7 +15,7 @@ services:
     depends_on:
       - php
     networks:
-      - laravel
+      - microservices
 
   php:
     build:
@@ -27,4 +27,4 @@ services:
     ports:
       - "9000:9000"
     networks:
-      - laravel
+      - microservices
